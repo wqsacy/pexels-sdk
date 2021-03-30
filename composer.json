@@ -1,0 +1,21 @@
+{
+  "name": "wangqs/pexels-sdk",
+  "description": "API encapsulation of pexels  --- Pexels 的 api 封装",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wangqs"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wangqs\\PexelsSdk\\": "src"
+    }
+  },
+  "require": {
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "php": ">=5.4.0",
+    "vendor/guzzlehttp/guzzle": "~6.0"
+  }
+}
