@@ -2,9 +2,7 @@
 
 	namespace Wangqs\PexelsSdk;
 
-	/**
-	 * @author Emil Kilhage <emil@glooby.com>
-	 */
+
 	class Client
 	{
 		/**
