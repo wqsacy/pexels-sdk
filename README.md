@@ -21,13 +21,13 @@ $pexels = new \Wangqs\PexelsSdk\Client("your token");
 Perform a search, the response gets returned as an array
 
 ```php
-$normalImg = $pexels->search('keyword');
+$normalImg = json_decode($pexels->search('keyword')->getBody())->photos;
 
-$featuredImg = $pexels->curated('keyword');
+$featuredImg = json_decode($pexels->curated('keyword')->getBody())->photos;
 
-$normalVideo = $pexels->videoSearch('keyword');
+$normalVideo = json_decode($pexels->videoSearch('keyword')->getBody())->videos;
 
-$featuredVideo = $pexels->videoCurated('keyword');
+$featuredVideo = json_decode($pexels->videoCurated('keyword')->getBody())->videos;
 ```
 
 ## Contributing
