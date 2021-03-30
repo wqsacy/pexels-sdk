@@ -24,7 +24,6 @@
 			$this->token = $token;
 		}
 
-
 		/**
 		 * @author     :  Wangqs  2021/3/30
 		 * @description:    图片搜索
