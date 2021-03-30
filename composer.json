@@ -16,6 +16,6 @@
     "ext-mbstring": "*",
     "ext-curl": "*",
     "php": ">=5.4.0",
-    "guzzlehttp/guzzle": "^7.3"
+    "guzzlehttp/guzzle": "^6.0"
   }
 }
