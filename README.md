@@ -9,9 +9,26 @@
 $ composer require wangqs/pexels-sdk -vvv
 ```
 
+
 ## Usage
 
-TODO
+Create an instance of the Pexels API Client by passing in your API token as parameter.
+
+```php
+$pexels = new \Wangqs\PexelsSdk\Client("your token");
+```
+
+Perform a search, the response gets returned as an array
+
+```php
+$normalImg = $pexels->search('keyword');
+
+$featuredImg = $pexels->curated('keyword');
+
+$normalVideo = $pexels->videoSearch('keyword');
+
+$featuredVideo = $pexels->videoCurated('keyword');
+```
 
 ## Contributing
 

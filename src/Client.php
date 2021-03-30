@@ -35,23 +35,6 @@
 				            ] ) );
 		}
 
-
-		/**
-		 * @return \GuzzleHttp\Client
-		 */
-		private function getClient () {
-			if ( null === $this->client ) {
-				$this->client = new \GuzzleHttp\Client( [
-					'base_uri' => 'https://api.pexels.com/v1/' ,
-					'headers'  => [
-						'Authorization' => $this->token
-					]
-				] );
-			}
-
-			return $this->client;
-		}
-
 		/**
 		 * @author     :  Wangqs  2021/3/30
 		 * @description:    图片精选
@@ -88,6 +71,24 @@
 					            'page'     => $page
 				            ] ) );
 		}
+
+		/**
+		 * @return \GuzzleHttp\Client
+		 */
+		private function getClient () {
+			if ( null === $this->client ) {
+				$this->client = new \GuzzleHttp\Client( [
+					'base_uri' => 'https://api.pexels.com/v1/' ,
+					'headers'  => [
+						'Authorization' => $this->token
+					]
+				] );
+			}
+
+			return $this->client;
+		}
+
+
 
 
 	}
